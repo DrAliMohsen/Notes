@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+    @page {
+        size: A4;
+        margin: 22mm 18mm;
+        @bottom-right {
+            content: counter(page);
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 8.5pt;
+            color: #a0aec0;
+        }
+        @bottom-left {
+            content: "Bilingual Presentation Speaker Notes • الذكاء الاصطناعي كمقيّم مساعد";
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-size: 8.5pt;
+            color: #a0aec0;
+        }
+    }
+    
+    body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 10pt;
+        line-height: 1.6;
+        color: #2d3748;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+    }
+    
+    .header-container {
+        border-bottom: 3px double #e2e8f0;
+        padding-bottom: 12px;
+        margin-bottom: 25px;
+    }
+    
+    h1 {
+        font-size: 20pt;
+        color: #1a365d;
+        margin: 0 0 5px 0;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+    }
+    
+    .arabic-title {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 18pt;
+        color: #2b6cb0;
+        text-align: right;
+        margin: 5px 0 12px 0;
+        direction: rtl;
+    }
+    
+    .slide-block {
+        margin-bottom: 30px;
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        page-break-inside: avoid;
+        overflow: hidden;
+    }
+    
+    .slide-header {
+        background-color: #f7fafc;
+        border-bottom: 1px solid #e2e8f0;
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .slide-title-en {
+        font-size: 12pt;
+        font-weight: bold;
+        color: #2c5282;
+    }
+    
+    .slide-title-ar {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 13pt;
+        font-weight: bold;
+        color: #2b6cb0;
+        direction: rtl;
+    }
+    
+    .content-split {
+        display: flex;
+        width: 100%;
+    }
+    
+    .column-en {
+        width: 50%;
+        padding: 15px;
+        border-right: 1px solid #edf2f7;
+        box-sizing: border-box;
+    }
+    
+    .column-ar {
+        width: 50%;
+        padding: 15px;
+        direction: rtl;
+        text-align: justify;
+        box-sizing: border-box;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 11.5pt;
+        line-height: 1.5;
+        background-color: #fafbfc;
+    }
+    
+    .timing-badge {
+        display: inline-block;
+        background-color: #ebf8ff;
+        color: #2b6cb0;
+        font-weight: bold;
+        font-size: 8.5pt;
+        padding: 2px 8px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    
+    .timing-badge-ar {
+        display: inline-block;
+        background-color: #f0fff4;
+        color: #22543d;
+        font-weight: bold;
+        font-size: 9.5pt;
+        padding: 2px 8px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+    
+    p {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    
+    p:last-child {
+        margin-bottom: 0;
+    }
+    
+    .highlight {
+        font-weight: 600;
+        color: #1a365d;
+    }
+    
+    .highlight-ar {
+        font-weight: bold;
+        color: #2c5282;
+    }
+    
+    .step-list {
+        margin: 5px 0;
+        padding-left: 18px;
+    }
+    
+    .step-list-ar {
+        margin: 5px 0;
+        padding-right: 18px;
+    }
+    
+    .step-list li, .step-list-ar li {
+        margin-bottom: 4px;
+    }
+</style>
+</head>
+<body>
+
+    <div class="header-container">
+        <h1>Parallel Bilingual Speaker Notes</h1>
+        <div class="arabic-title">نصوص المتحدث الثنائية الموازية — الشاشات والعروض</div>
+    </div>
+
+    <!-- Slide 1 -->
+    <div class="slide-block">
+        <div class="slide-header">
+            <span class="slide-title-en">Slide 1 — Title</span>
+            <span class="slide-title-ar">السلايد 1 — العنوان</span>
+        </div>
+        <div class="content-split">
+            <div class="column-en">
+                <div class="timing-badge">OPENING (60–75 seconds)</div>
+                <p>Good morning and thank you for the opportunity to present this initiative. Today I'll walk you through a practical, evidence-based framework for using AI tools to strengthen how we assess live peer-to-peer interaction and collaborative outreach work in the English classroom. This is not about replacing professional judgment — it is about giving teachers a second set of eyes during the exact moments when human attention is stretched thinnest: live group work.</p>
+                <p>We will cover: the core assessment problem, the paradigm shift AI enables, two concrete technical applications (discourse analytics and automated rubric mapping), how this extends to outreach and mentoring programs, the strategic value to administration, and finally our responsible rollout and data-privacy plan.</p>
+            </div>
+            <div class="column-ar">
+                <div class="timing-badge-ar">الافتتاحية (60–75 ثانية)</div>
+                <p>صباح الخير، وأشكركم على هذه فرصة لتقديم هذه المبادرة. سأصحبكم اليوم في جولة لاستعراض إطار عمل عملي وقائم على الأدلة لاستخدام أدوات الذكاء الاصطناعي لتعزيز طريقة تقييمنا للتفاعل الحي بين الزملاء وأعمال التواصل التعاوني في فصول اللغة الإنجليزية. لا يهدف هذا الأمر إلى استبدال التقييم المهني للمعلم — بل يتعلق بمنح المعلمين "عينًا ثانية" في اللحظات الدقيقة التي يتشتت فيها الانتباه البشري لأقصى حد: وهي أوقات العمل الجماعي الحي.</p>
+                <p>سنتناول ما يلي: المشكلة الأساسية في التقييم، والتحول الفكري الذي يتيحه الذكاء الاصطناعي، وتطبيقين تقنيين ملموسين (تحليلات الخطاب والمطابقة المؤتمتة لمعايير التقييم)، وكيف يمتد هذا إلى برامج التواصل والتوجيه، والقيمة الاستراتيجية للإدارة، وأخيرًا خطتنا للإطلاق المسؤول وخصوصية البيانات.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slide-block">
+        <div class="slide-header">
+            <span class="slide-title-en">Slide 2 — The Assessment Dilemma</span>
+            <span class="slide-title-ar">السلايد 2 — معضلة التقييم</span>
+        </div>
+        <div class="content-split">
+            <div class="column-en">
+                <p>This slide names the problem every experienced teacher in this room already feels. Formative assessment research is unambiguous that the highest-value evidence of language learning happens during live peer talk — debates, group synthesis, paired discussion — not on a written test two weeks later. But a single teacher physically cannot be in six places at once. What happens in practice is <span class="highlight">"snapshot bias"</span>: we grade based on whichever group we happened to be standing beside for thirty seconds.</p>
+                <p>That is not a criticism of our teachers — it is a structural limitation of one human being with one set of ears in a room of thirty students. The consequence is an equity problem: quieter groups, English-language learners, and less assertive students are systematically under-observed. This is exactly the gap AI-assisted monitoring is designed to close — not by replacing the teacher's ear, but by giving every group a fair, continuous, and documented hearing.</p>
+            </div>
+            <div class="column-ar">
+                <p>تسمي هذه السلايد المشكلة التي يشعر بها بالفعل كل معلم ذي خبرة في هذه الغرفة. أبحاث التقييم التكويني واضحة تمامًا في أن الأدلة الأكثر قيمة على تعلم اللغة تحدث أثناء التحدث الحي بين الزملاء — مثل المناظرات، والتلخيص الجماعي، والمناقشات الثنائية — وليس في اختبار كتابي بعد أسبوعين. ولكن لا يمكن لمعلم واحد جسديًا أن يتواجد في ستة أماكن (places) في وقت واحد. ما يحدث في الممارسة العملية هو <span class="highlight-ar">"انحياز اللقطة الخاطفة" (Snapshot Bias)</span>: فنحن نضع الدرجات بناءً على المجموعة التي تصادف أننا وقفنا بجانبها لمدة ثلاثين ثانية.</p>
+                <p>هذا ليس انتقادًا لمعلمينا — بل هو عائق هيكلي يواجه إنسانًا واحدًا يمتلك زوجًا واحدًا من الآذان في غرفة تضم ثلاثين طالبًا. والنتيجة هي مشكلة في تحقيق التكافؤ: فالمجموعات الأكثر هدوءًا، ومتعلمو اللغة الإنجليزية، والطلاب الأقل حزمًا يقعون ضحية لقلة الملاحظة بشكل منهجي. هذه هي الفجوة تحديدًا التي صُممت المراقبة المدعومة بالذكاء الاصطناعي لسدها — ليس من خلال استبدال رصد المعلم، بل بمنح كل مجموعة فرصة استماع عادلة ومستمرة وموثقة.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide-block">
+        <div class="slide-header">
+            <span class="slide-title-en">Slide 3 — AI as a Co-Evaluator</span>
+            <span class="slide-title-ar">السلايد 3 — الذكاء الاصطناعي كمقيّم مساعد</span>
+        </div>
+        <div class="content-split">
+            <div class="column-en">
+                <p>The single most important idea in this presentation is on this slide: <span class="highlight">AI functions as a co-evaluator, never as the evaluator of record</span>. Think of it as a highly attentive teaching assistant who never gets tired and never stands closer to one group than another. Instead of one subjective snapshot, we get a continuous stream of objective indicators — who spoke, for how long, how the conversation built on prior turns.</p>
+                <p>The teacher still makes every final grading judgment; the AI simply ensures that judgment is informed by the full picture rather than a thirty-second sample. This also gives us something we've never had before: a time-stamped evidence trail we can show a parent or an exam board if a grade is ever questioned. And critically, it frees the teacher from constant circulating so that time can be spent on the highest-value activity of all — direct, targeted intervention with the students who need it most.</p>
+            </div>
+            <div class="column-ar">
+                <p>إن الفكرة الأكثر أهمية في هذا العرض التقديمي بأكمله توجد في هذه الشريحة: <span class="highlight-ar">يعمل الذكاء الاصطناعي كمقيّم مساعد، وليس كمقيّم أساسي معتمد أبدًا</span>. فكر فيه كمساعد تدريس شديد الانتباه لا يتعب أبدًا ولا يقف قريبًا من مجموعة دون أخرى. فبدلاً من لقطة ذاتية واحدة، نحصل على تدفق مستمر من المؤشرات الموضوعية — من تحدث، وكم دامت مدة حديثه، وكيف بُنيت المحادثة على المشاركات السابقة.</p>
+                <p>ولا يزال المعلم يتخذ كل قرار نهائي بشأن وضع الدرجات؛ وكل ما يفعله الذكاء الاصطناعي هو ضمان أن يكون هذا القرار مبنيًا على الصورة الكاملة بدلاً من عينة مدتها ثلاثين ثانية. يمنحنا هذا أيضًا شيئًا لم يكن لدينا من قبل: سجل أدلة موثق بالطوابع الزمنية يمكننا إظهاره لولي الأمر أو للجنة الامتحانات إذا تم التشكيك في أي درجة. والأهم من ذلك، أنه يحرر المعلم من التنقل المستمر بين المجموعات بحيث يمكن استغلال هذا الوقت في النشاط الأكثر قيمة على الإطلاق — وهو التدخل المباشر والمستهدف مع الطلاب الأكثر حاجة إليه.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slide-block">
+        <div class="slide-header">
+            <span class="slide-title-en">Slide 4 — Real-Time Audio & Discourse Analysis</span>
+            <span class="slide-title-ar">السلايد 4 — التحليل الفوري للصوت والخطاب</span>
+        </div>
+        <div class="content-split">
+            <div class="column-en">
+                <p>This is where technology becomes tangible. Modern speech-to-text engines can now transcribe multiple overlapping speakers in a noisy classroom with high accuracy, producing a live, searchable record of what was said in each group's debate. Layered on top of that transcript, sentiment-mapping models flag emotional tone in real time — so if a group hits a moment of genuine intellectual friction, or conversely disengages entirely, the teacher gets a discreet dashboard alert rather than having to overhear it by chance.</p>
+                <p><span class="highlight">Talk-time equity metrics</span> are perhaps the most immediately useful feature for English-language teaching specifically: we can see, instantly, whether one student is dominating a debate while another has said nothing in ten minutes, and intervene accordingly. None of this requires the teacher to look at a screen throughout the lesson — it is a background layer of assessment intelligence, surfaced only when action is needed.</p>
+            </div>
+            <div class="column-ar">
+                <p>هنا تصبح التكنولوجيا ملموسة. يمكن لمحركات تحويل الكلام إلى نص الحديثة الآن تدوين نصوص المتحدثين المتعددين والمتداخلين في فصل دراسي صاخب بدقة عالية، مما ينتج سجلًا حيًا وقابلاً للبحث لما قيل في مناظرة كل مجموعة. وبناءً على ذلك النص، تقوم نماذج تحليل المشاعر برصد النبرة العاطفية في الوقت الفعلي — فإذا وصلت مجموعة ما إلى لحظة من الاحتكاك الفكري الحقيقي، أو على العكس من ذلك، انعزلت تمامًا، يتلقى المعلم تنبيهًا سريًا على لوحة التحكم بدلاً من الاضطرار إلى سماع ذلك بالصدفة.</p>
+                <p>ولعل مقاييس <span class="highlight-ar">تكافؤ وقت التحدث</span> هي الميزة الأكثر فائدة بشكل مباشر لتدريس اللغة الإنجليزية تحديدًا: إذ يمكننا أن نرى، على الفور، ما إذا كان طالب واحد يهيمن على المناظرة بينما لم يقل طالب آخر شيئًا منذ عشر دقائق، والتدخل بناءً على ذلك. لا يتطلب أي من هذا من المعلم النظر إلى الشاشة طوال الدرس — بل هي طبقة خلفية من ذكاء التقييم، لا تظهر إلا عند الحاجة إلى اتخاذ إجراء.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="slide-block">
+        <div class="slide-header">
+            <span class="slide-title-en">Slide 5 — Automated Rubric Mapping & Loops</span>
+            <span class="slide-title-ar">السلايد 5 — المطابقة المؤتمتة لمعايير التقييم وحلقات التغذية الراجعة</span>
+        </div>
+        <div class="content-split">
+            <div class="column-en">
+                <p>Rubric mapping is where AI saves the most administrative time without sacrificing rigor. As soon as an activity concludes, the system cross-references the discourse and language data from the previous slide against our existing Cambridge, IB, or state-standard rubric descriptors and proposes a provisional score with the supporting evidence attached — for example, flagging the exact transcript moment where a student demonstrated "sustained coherent argument."</p>
+                <p>The teacher reviews, edits, or overrides that draft before anything is finalized; <span class="highlight">nothing is ever auto submitted</span>. The immediate win for students is instant, specific feedback on their collaboration and communication — delivered while the activity is still fresh in their memory, not a rubric handed back a week later. For administration, this also closes a consistency gap: every class, regardless of which teacher is running it, is measured against identical rubric logic, which materially strengthens grading defensibility.</p>
+            </div>
+            <div class="column-ar">
+                <p>مطابقة معايير التقييم (Rubric Mapping) هي الجانب الذي يوفر فيه الذكاء الاصطناعي أكبر قدر من الوقت الإداري دون التضحية بالدقة. بمجرد انتهاء النشاط، يقارن النظام بيانات الخطاب واللغة من السلايد السابقة مع توصيفات معايير التقييم الحالية لدينا (سواء كانت كامبريدج، أو البكالوريا الدولية IB، أو معايير الولاية) ويقترح درجة مؤقتة مرفقة بالأدلة الداعمة — على سبيل المثال، تحديد اللحظة الدقيقة في النص التي أظهر فيها الطالب "حجة متماسكة ومستمرة".</p>
+                <p>يقوم المعلم بمراجعة هذه المسودة أو تعديلها أو إلغائها قبل اعتماد أي شيء؛ <span class="highlight-ar">فلا يتم إرسال أي شيء تلقائيًا على الإطلاق</span>. الفوز الفوري للطلاب هو الحصول على تغذية راجعة فورية ومحددة بشأن تعاونهم وتواصلهم — تُقدم لهم بينما لا يزال النشاط حاضرًا في ذاكرتهم، بدلاً من تسليمهم ورقة المعايير بعد أسبوع. بالنسبة للإدارة، يسد هذا أيضًا فجوة التباين: فكل فصل، بغض النظر عن المعلم الذي يديره، يُقاس وفقًا لمنطق معايير متطابق، مما يعزز بشكل ملموس من إمكانية الدفاع عن مصداقية الدرجات ورصدها.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6 -->
+    <div class="slide-block">
+        <div class="slide-header">
+            <span class="slide-title-en">Slide 6 — Managing Outreach & Activities</span>
+            <span class="slide-title-ar">السلايد 6 — إدارة الأنشطة الخارجية والتعاونية</span>
+        </div>
+        <div class="content-split">
+            <div class="column-en">
+                <p>The same monitoring logic extends naturally beyond a single classroom debate into the outreach and peer-mentoring programs many of our students participate in outside timetabled lessons. Instead of relying on end-of-term self-reported logs, we can track the frequency and communication quality of mentor-mentee check-ins and consolidate outreach-project milestones into a single live dashboard visible to the supervising teacher.</p>
+                <p><span class="highlight">Team-communication-health metrics</span> are particularly valuable here: they let us identify, weeks in advance, a group that is quietly falling apart or a student who has become isolated within their team — long before it surfaces as a missed deadline or a grading dispute. Over the full term, this builds a longitudinal portfolio of collaborative competency for every student, which is far richer evidence for a reference letter or a leadership award than a single project grade.</p>
+            </div>
+            <div class="column-ar">
+                <p>يمتد منطق المراقبة نفسه بشكل طبيعي إلى ما هو أبعد من مناظرة الفصل الدراسي الواحد ليشمل برامج التواصل الخارجي وتوجيه الزملاء التي يشارك فيها العديد من طلابنا خارج أوقات الحصص الدراسية الرسمية. فبدلاً من الاعتماد على السجلات الذاتية التي يقدمها الطلاب في نهاية الفصل الدراسي، يمكننا تتبع وتيرة وجودة التواصل في اللقاءات بين الموجه والمُوجَّه، ودمج المراحل الرئيسية لمشاريع التواصل الخارجي في لوحة تحكم حية واحدة يراها المعلم المشرف.</p>
+                <p>وتكتسب مقاييس <span class="highlight-ar">"سلامة التواصل الجماعي"</span> قيمة خاصة هنا: فهي تتيح لنا تحديد المجموعة التي بدأت تتفكك بهدوء أو الطالب الذي أصبح معزولاً داخل فريقه قبل أسابيع من حدوث ذلك — وقبل وقت طويل من ظهور المشكلة في شكل فوات موعد تسليم أو نزاع حول الدرجات. على مدار الفصل الدراسي بأكمله، يبني هذا ملفًا طوليًا للكفاءة التعاونية لكل طالب، وهو ما يمثل دليلاً أغنى بكثير لرسالة توصية أو جائزة قيادية مقارنة بدرجة مشروع واحدة.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 7 -->
+    <div class="slide-block">
+        <div class="slide-header">
+            <span class="slide-title-en">Slide 7 — Strategic Benefits for Admin</span>
+            <span class="slide-title-ar">السلايد 7 — الفوائد الاستراتيجية للإدارة</span>
+        </div>
+        <div class="content-split">
+            <div class="column-en">
+                <p>From an administrative standpoint, this initiative delivers value well beyond one classroom. Leadership currently has almost no visibility into collaboration quality until it appears as a final grade or a parent complaint; this framework produces a real-time, school-wide dashboard of formative data across every section of English. Because every class is scored against the same rubric logic, we materially reduce grading variance between teachers.</p>
+                <p>On the well-being side, the burnout reduction is not theoretical — manual observation note-taking during group work is one of the most time-consuming, low-leverage tasks in a teacher's week, and automating the data-capture layer gives that time back. Finally, in the event of a grade appeal or a difficult parent conversation, we now have a defensible, time-stamped record instead of a teacher's memory of a single lesson.</p>
+            </div>
+            <div class="column-ar">
+                <p>من وجهة نظر إدارية، تقدم هذه المبادرة قيمة تتجاوز حدود الفصل الدراسي الواحد. لا تملك القيادة حاليًا أي رؤية تقريبًا حول جودة التعاون حتى تظهر كدرجة نهائية أو شكوى من ولي أمر؛ بينما ينتج هذا الإطار لوحة تحكم فورية وشاملة للمدرسة ببيانات تكوينية عبر كل شعبة من شعب اللغة الإنجليزية. ونظرًا لأن كل فصل يتم تقييمه وفقًا لنفس منطق المعايير، فإننا نحد بشكل ملموس من تباين الدرجات بين المعلمين.</p>
+                <p>أما من جانب جودة الحياة المهنية، فإن تقليل الاحتراق الوظيفي ليس أمرًا نظريًا — إذ يعد تدوين ملاحظات المراقبة اليدوية أثناء العمل الجماعي أحد أكثر المهام استهلاكًا للوقت وأقلها تأثيرًا في أسبوع المعلم، وأتمتة طبقة التقاط البيانات تعيد هذا الوقت لهم. أخيرًا، في حالة الاعتراض على الدرجات أو إجراء محادثة صعبة مع ولي أمر، أصبح لدينا الآن سجل موثق بالطوابع الزمنية يمكن الدفاع عنه بدلاً من الاعتماد على ذاكرة المعلم لدرس واحد.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 8 -->
+    <div class="slide-block">
+        <div class="slide-header">
+            <span class="slide-title-en">Slide 8 — Safeguards & Rollout</span>
+            <span class="slide-title-ar">السلايد 8 — التنفيذ وضمانات خصوصية البيانات</span>
+        </div>
+        <div class="content-split">
+            <div class="column-en">
+                <p>None of the preceding slide’s matter if we cannot implement this responsibly, so I want to spend real time here. Our rollout is a deliberate three-step process:</p>
+                <ul class="step-list">
+                    <li><strong>Step One:</strong> Small, fully opt-in pilot in a single classroom, contingent on parental/guardian consent and staff training.</li>
+                    <li><strong>Step Two:</strong> Controlled department-wide expansion after a 6-week review of accuracy, reliability, and direct feedback.</li>
+                    <li><strong>Step Three:</strong> Full school integration with quarterly compliance audits and standing opt-out pathway.</li>
+                </ul>
+                <p>All data is encrypted at rest/transit, restricted to the student's teachers, and retained for the academic year under FERPA/GDPR rules. No score is finalized without human named approval.</p>
+            </div>
+            <div class="column-ar">
+                <p>لا تهم أي من الشرائح السابقة إذا لم نتمكن من تنفيذ هذا بمسؤولية، لذا أريد قضاء وقت حقيقي هنا. إن إطلاقنا للمشروع هو عملية مدروسة تتكون من ثلاث خطوات:</p>
+                <ul class="step-list-ar">
+                    <li><strong>الخطوة الأولى:</strong> برنامج تجريبي صغير اختياري تمامًا في فصل دراسي واحد، مشروط بموافقة ولي الأمر والتدريب الكامل للموظفين.</li>
+                    <li><strong>الخطوة الثانية:</strong> توسع محكوم على مستوى القسم بعد مراجعة موثقة لمدة ستة أسابيع لدقة التدوين، وموثوقية التحليل، وملاحظات المعلمين.</li>
+                    <li><strong>الخطوة الثالثة:</strong> التكامل الكامل مع المدرسة، مصحوبًا بعمليات تدقيق دورية للامتثال ربع سنوية ومسار دائم لإلغاء الاشتراك.</li>
+                </ul>
+                <p>سيتم تشفير البيانات الصوتية والنصية، ويقتصر الوصول على معلمي الطالب فقط، بموجب مبادئ قوانين FERPA و GDPR. لا يتم اعتماد أي درجة نهائية دون الموافقة الصريحة والاسمية من معلم بشري.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 9 -->
+    <div class="slide-block">
+        <div class="slide-header">
+            <span class="slide-title-en">Slide 9 — Academic References</span>
+            <span class="slide-title-ar">السلايد 9 — المراجع الأكاديمية</span>
+        </div>
+        <div class="content-split">
+            <div class="column-en">
+                <p><em>Here are the academic references as detailed in the introduction packet.</em></p>
+            </div>
+            <div class="column-ar">
+                <p><em>إليكم المراجع الأكاديمية كما هو مفصل في حزمة التقديم الأساسية.</em></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 10 -->
+    <div class="slide-block">
+        <div class="slide-header">
+            <span class="slide-title-en">Slide 10 — Thank You</span>
+            <span class="slide-title-ar">السلايد 10 — شكرًا لكم</span>
+        </div>
+        <div class="content-split">
+            <div class="column-en">
+                <p>Thank you for your time and attention today. To close, I want to be direct about the philosophy behind this presentation: every tool discussed today is designed to extend a teacher's attention during live classroom moments — never to replace the professional judgment, relationship-building, and mentorship that only a human teacher can provide.</p>
+                <p>AI can help us notice more, document more fairly, and reduce burnout — but it cannot replace the human touch that makes teaching so important. Thank you.</p>
+            </div>
+            <div class="column-ar">
+                <p>شكرًا لكم على وقتكم واهتمامكم اليوم. ختامًا، أود أن أكون مباشرًا بشأن الفلسفة الكامنة وراء هذا العرض التقديمي: كل أداة نوقشت اليوم مصممة لتوسيع نطاق انتباه المعلم أثناء لحظات الفصل الدراسي الحية — وليس لاستبدال التقييم المهني، وبناء العلاقات، والتوجيه الذي لا يمكن إلا لمعلم بشري تقديمه.</p>
+                <p>يمكن للذكاء الاصطناعي أن يساعدنا في ملاحظة المزيد، والتوثيق بشكل أكثر إنصافًا، وتقليل الاحتراق الوظيفي — لكنه لا يمكنه استبدال اللمسة الإنسانية التي تجعل من التدريس أمرًا بالغ الأهمية. شكرًا لكم.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
